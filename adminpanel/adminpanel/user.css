@@ -1,0 +1,130 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+
+body{
+    min-height: 100vh;
+    /* background:url(sadhguru2.jpg) center/cover; */
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+ul {
+    padding: 0;
+  }
+
+li{
+    list-style: none;
+    font-size: 20px;
+    padding: 15px 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin: 5px 0;
+}
+h1 {
+    color: #fff;
+    font-size: 28px;
+    text-align: center;
+    padding: 10px;
+    background: rgb(255, 200, 0);
+  }
+h1,h2{
+    color:#444;
+
+}
+.side-menu{
+    /* position:fixed; */
+    background:rgb(255, 200, 0);
+    width:20vw;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    box-shadow: 0 0 10px rgba(253, 0, 0, 0.1);
+
+}
+.side-menu.brand-name{
+      height:10vh;
+      display:flex;
+      align-items:center;
+      justify-content: center;
+}
+.side-menuli{
+    .side-menu {
+        position: fixed;
+        background: #f9c5c9; /* Lighter shade of red */
+        width: 20vw;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+}
+li:hover {
+    background: #fff;
+    color: #f05462;
+    border-radius: 5px;
+  }
+  
+  .table{
+    margin:0px 2px;
+  }
+
+table{
+    width:100%;
+}
+td.img{
+    width:36px;
+    height:36px;
+    margin-right: .5rem;
+    border-radius:50%;
+    vertical-align: middle;
+}
+table,th,td{
+    border-collapse: collapse;
+    padding:1rem;
+}
+thead th{
+    position:sticky;
+    top:0;
+    left:0;
+    background-color: #d4d1defe;
+}
+main.table{
+    width:82vw;
+    height:90vh;
+    background-color: #fff5;
+    background-filter: blur(7px);
+    box-shadow: 0 .4rem .8rem rgba(255, 0, 0, 0.333);
+    /* border-radius: .8rem; */
+    overflow:hidden;
+}
+
+.table_header{
+    width:100%;
+    height: 10%;
+    background-color: #fff4;
+    padding:.8rem 1rem;
+}
+.table_body{
+    width:95%;
+    max-height:calc(89% - .8rem);
+    background-color: #fffb;
+    margin: .8rem auto;
+    border-radius:.6rem;
+    overflow:auto;
+}
+.table_body::webkit-scrollbar-thumb{
+   border-radius:.5rem;
+   background-color:rgba(255, 3, 3, 0.267);
+   visibility:hidden;
+}
+.table_body:hover::-webkit-scrollbar-thumb{
+    visibility: hidden;
+}
